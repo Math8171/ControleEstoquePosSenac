@@ -1,0 +1,74 @@
+.containerLogin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 92, 5vw;
+    height: 100vh;
+    background-color: #E9F8E5;
+  }
+  
+  .imagem {
+    width: 600px;
+    height: auto;
+  }
+  
+  .imagemLogin {
+    margin-left: 200px;
+    margin-top: 100px;
+  }
+  
+  .login-informacaoes {
+    margin-top: 100px;
+  }
+  
+  
+  .login-container {
+    max-width: 400px;
+    padding: 70px;
+    border: 1px solid;
+    padding: 40px;
+    border-radius: 15px;
+    border-color: #FFFFFF;
+    margin-left: 243px;
+    background-color: #FFFFFF;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .textoLogin {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .botaoLogin {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+    cursor: pointer;
+  }

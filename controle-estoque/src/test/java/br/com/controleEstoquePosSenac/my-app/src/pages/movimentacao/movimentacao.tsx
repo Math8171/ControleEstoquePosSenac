@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './movimentacao.css';
-import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaHistory, FaSearch, FaUser } from 'react-icons/fa';
+import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaHistory, FaSearch, FaUser, } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
-import { TbShoppingBagPlus, TbShoppingBagEdit, TbShoppingBagMinus, TbShoppingBagExclamation, TbSearch } from "react-icons/tb";
+import { TbSearch } from "react-icons/tb";
+import { BsCashCoin } from "react-icons/bs";
 
 function Movimentacao() {
 
@@ -84,20 +85,13 @@ function Movimentacao() {
         </table>
         <div className="iconesCrud">
           <div>
-            <NavLink to="/pontoReposicao" activeClassName="active" className="botaoCadastroMovimentacao">
-              <TbShoppingBagExclamation size={45} />
-            </NavLink>
+
           </div>
           <div className="boxBotaoMovimentacao">
             <NavLink to="/movimentacaoFinanceira" activeClassName="active" className="botaoCadastroMovimentacao">
-              <TbShoppingBagPlus size={45} />
+              <BsCashCoin   size={45} />
             </NavLink>
-            <NavLink to="/editarMovimentacao" activeClassName="active" className="botaoCadastroMovimentacao">
-              <TbShoppingBagEdit size={45} />
-            </NavLink>
-            <NavLink to="/excluirMovimentacao" activeClassName="active" className="botaoCadastroMovimentacao">
-              <TbShoppingBagMinus size={45} />
-            </NavLink>
+
           </div>
         </div>
       </div>

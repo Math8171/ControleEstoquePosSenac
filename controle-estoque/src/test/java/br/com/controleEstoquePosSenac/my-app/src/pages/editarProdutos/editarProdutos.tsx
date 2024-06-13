@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './editarProdutos.css';
-import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaHistory, FaSearch, FaUser } from 'react-icons/fa';
+import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaUser } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
 function EditarProdutos() {
@@ -59,14 +59,6 @@ function EditarProdutos() {
           <NavLink to="/movimentacao" activeClassName="active" className="botaoMenu">
             <FaExchangeAlt size={20} style={{ marginRight: '10px' }} />
             MOVIMENTAÇÃO
-          </NavLink>
-          <NavLink to="/extrato" activeClassName="active" className="botaoMenu">
-            <FaHistory size={20} style={{ marginRight: '10px' }} />
-            EXTRATO
-          </NavLink>
-          <NavLink to="/consultas" activeClassName="active" className="botaoMenu">
-            <FaSearch size={20} style={{ marginRight: '10px' }} />
-            CONSULTAS
           </NavLink>
         </div>
       </div>

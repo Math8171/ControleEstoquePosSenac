@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './extrato.css';
-import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaHistory, FaSearch, FaUser } from 'react-icons/fa';
+import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaUser } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+import { TbSearch } from "react-icons/tb";
 
 function Extrato() {
 
@@ -35,22 +36,44 @@ function Extrato() {
             <FaTruck size={20} style={{ marginRight: '10px' }} />
             FORNECEDORES
           </NavLink>
-          <NavLink to="/movimentacao" activeClassName="active" className="botaoMenu">
+          <NavLink to="/movimentacao" activeClassName="active" className="botaoMenuExtrato">
             <FaExchangeAlt size={20} style={{ marginRight: '10px' }} />
             MOVIMENTAÇÃO
           </NavLink>
-          <NavLink to="/extrato" activeClassName="active" className="botaoMenu">
-            <FaHistory size={20} style={{ marginRight: '10px' }} />
-            EXTRATO
-          </NavLink>
-          <NavLink to="/consultas" activeClassName="active" className="botaoMenu">
-            <FaSearch size={20} style={{ marginRight: '10px' }} />
-            CONSULTAS
-          </NavLink>
         </div>
       </div>
-      <div className="segunda-box">
-        <h1>EXTRATO</h1>
+      <div className="extrato-box">
+        <div className="textoExtrato">
+          <h1>EXTRATO</h1>
+        </div>
+        <div className="extrato-bar">
+          <input className="inputBusca" type="text" placeholder="Digite o nome do produto:" />
+          <NavLink to="/buscarExtrato" className="botaoCadastroProduto">
+            <TbSearch size={35} />
+          </NavLink>
+        </div>
+        <table className="tableExtrato">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Produto</th>
+              <th>Quant. Estoque</th>
+              <th>Quant. Minima</th>
+              <th>Preço Médio</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Array.from({ length: 10 }, (_, rowIndex) => (
+              <tr key={rowIndex}>
+                {Array.from({ length: 5 }, (_, colIndex) => (
+                  <td key={colIndex}>
+                    Celula {rowIndex + 1}-{colIndex + 1}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );

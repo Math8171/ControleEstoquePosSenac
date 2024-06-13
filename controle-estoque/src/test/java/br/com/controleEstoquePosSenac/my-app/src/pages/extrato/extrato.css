@@ -59,26 +59,129 @@
     color:black;
   }
   
-  .segunda-box {
-    background-color: white;
-    flex: 5;
-    border:1px solid;
-  }
-  
-  .segunda-box h1{
-    text-align: center;
-    margin-top: 70px;
-    font-weight: bold;
-    font-size: 70px
-  }
 
-  .botaoSubMenuEstoqueEstoque{
-    padding: 0px 20px;
-    border: none;
-    background-color: #2f4f4f;
-    color: white;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size:10px
-  }
+/*SEGURANDA PARTE*/
+
+.extrato-box {
+  background-color: white;
+  flex: 5;
+  border: 1px solid;
+  justify-content: center;
+}
+
+.extrato-box h1 {
+  text-align: center;
+  margin-top: 70px;
+  font-weight: bold;
+  font-size: 70px
+}
+
+.extrato-bar {
+  display: flex;
+  justify-content: end;
+  padding: 10px 40px 10px 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+}
+
+.extrato-bar button {
+  height: 35px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tableExtrato {
+  margin-left: 70px;
+  width: 90%;
+  border-collapse: collapse;
+  border: 1px solid;
+
+}
+
+.tableExtrato th,
+.tableExtrato td {
+  border-bottom: 1px solid #dcdcdc;
+  text-align: center;
+  border: 1px solid;
+}
+
+.tableExtrato th {
+  background-color: #778899;
+  text-align: center;
+}
+
+.botaoBuscar {
+  width: 100px;
+  height: 30px;
+  margin-right: 130px;
+}
+
+.inputBusca::placeholder {
+  color: black;
+
+}
+
+.inputBusca:hover {
+  background-color: white;
+}
+
+.inputBusca {
+  background-color: #dcdcdc;
+  width: 600px;
+  height: 30px;
+  margin-right: 20px;
+  border: 0.1px solid #778899;
+  ;
+  border-radius: 8px;
+}
+
+.iconesCrud {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+}
+
+.boxBotaoExtrato {
+  display: flex;
+  justify-content: end;
+  margin-right: 40px;
+}
+
+.botaoCadastroExtrato {
+  margin-right: 20px;
+  color: black;
+}
+
+.textoExtrato h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.textoExtrato {
+  margin-top: -40px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #dcdcdc;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.botaoMenuExtrato {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #2f4f4f;
+  color: yellow;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+

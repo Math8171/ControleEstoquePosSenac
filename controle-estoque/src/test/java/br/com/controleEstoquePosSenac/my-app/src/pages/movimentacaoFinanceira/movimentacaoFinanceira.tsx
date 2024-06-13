@@ -38,7 +38,7 @@ function CadastroProduto() {
                     <h1>Jori Almeida</h1>
                 </div>
                 <div className="button-container">
-                    <NavLink to="/produtos" activeClassName="active" className="botaoMenuProduto">
+                    <NavLink to="/produtos" activeClassName="active" className="botaoMenu">
                         <FaBox size={20} style={{ marginRight: '10px' }} />
                         PRODUTOS
                     </NavLink>
@@ -58,17 +58,9 @@ function CadastroProduto() {
                         <FaTruck size={20} style={{ marginRight: '10px' }} />
                         FORNECEDORES
                     </NavLink>
-                    <NavLink to="/movimentacao" activeClassName="active" className="botaoMenu">
+                    <NavLink to="/movimentacao" activeClassName="active" className="botaoMenuMovimentacaoFinanceira">
                         <FaExchangeAlt size={20} style={{ marginRight: '10px' }} />
                         MOVIMENTAÇÃO
-                    </NavLink>
-                    <NavLink to="/extrato" activeClassName="active" className="botaoMenu">
-                        <FaHistory size={20} style={{ marginRight: '10px' }} />
-                        EXTRATO
-                    </NavLink>
-                    <NavLink to="/consultas" activeClassName="active" className="botaoMenu">
-                        <FaSearch size={20} style={{ marginRight: '10px' }} />
-                        CONSULTAS
                     </NavLink>
                 </div>
             </div>

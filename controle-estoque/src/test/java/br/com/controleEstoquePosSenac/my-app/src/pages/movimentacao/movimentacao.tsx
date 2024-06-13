@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './movimentacao.css';
 import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaHistory, FaSearch, FaUser, } from 'react-icons/fa';
+import { BsFillFileTextFill } from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
 import { TbSearch } from "react-icons/tb";
 import { BsCashCoin } from "react-icons/bs";
@@ -12,7 +13,7 @@ function Movimentacao() {
       <div className="menu-box">
         <div className="profile-container">
           <div className="image-placeholder">
-            <FaUser size={60} color="black" /> 
+            <FaUser size={60} color="black" />
           </div>
           <h1>Jori Almeida</h1>
         </div>
@@ -40,14 +41,6 @@ function Movimentacao() {
           <NavLink to="/movimentacao" activeClassName="active" className="botaoMenuMovimentacao">
             <FaExchangeAlt size={20} style={{ marginRight: '10px' }} />
             MOVIMENTAÇÃO
-          </NavLink>
-          <NavLink to="/extrato" activeClassName="active" className="botaoMenu">
-            <FaHistory size={20} style={{ marginRight: '10px' }} />
-            EXTRATO
-          </NavLink>
-          <NavLink to="/consultas" activeClassName="active" className="botaoMenu">
-            <FaSearch size={20} style={{ marginRight: '10px' }} />
-            CONSULTAS
           </NavLink>
         </div>
       </div>
@@ -85,14 +78,19 @@ function Movimentacao() {
         </table>
         <div className="iconesCrud">
           <div>
+            <div className="boxBotaoMovimentacao">
 
+            </div>
           </div>
           <div className="boxBotaoMovimentacao">
             <NavLink to="/movimentacaoFinanceira" activeClassName="active" className="botaoCadastroMovimentacao">
-              <BsCashCoin   size={45} />
+              <BsCashCoin size={45} />
             </NavLink>
-
+            <NavLink to="/extrato" activeClassName="active" className="botaoCadastroMovimentacao">
+              <BsFillFileTextFill size={45} />
+            </NavLink>
           </div>
+
         </div>
       </div>
     </div>

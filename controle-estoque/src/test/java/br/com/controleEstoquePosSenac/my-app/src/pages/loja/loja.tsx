@@ -43,14 +43,6 @@ function Estoque() {
             <FaExchangeAlt size={20} style={{ marginRight: '10px' }} />
             MOVIMENTAÇÃO
           </NavLink>
-          <NavLink to="/extrato" activeClassName="active" className="botaoMenu">
-            <FaHistory size={20} style={{ marginRight: '10px' }} />
-            EXTRATO
-          </NavLink>
-          <NavLink to="/consultas" activeClassName="active" className="botaoMenu">
-            <FaSearch size={20} style={{ marginRight: '10px' }} />
-            CONSULTAS
-          </NavLink>
         </div>
       </div>
       <div className="loja-box">

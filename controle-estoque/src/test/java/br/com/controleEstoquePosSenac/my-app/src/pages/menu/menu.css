@@ -1,0 +1,101 @@
+.menu-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .menu-box {
+    background-color: #2f4f4f;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid;
+  }
+  
+  .image-placeholder {
+    width: 120px;
+    height: 120px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-placeholder svg {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .botaoMenu {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #2f4f4f;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .botaoMenu:hover {
+    background-color: #3d6d6d;
+    color:black;
+  }
+  
+  .segunda-box {
+    background-color: white;
+    flex: 5;
+    border:1px solid;
+  }
+  
+  .segunda-box h1{
+    text-align: center;
+    margin-top: 70px;
+    font-weight: bold;
+    font-size: 70px
+  }
+
+
+
+  .menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+  }
+
+
+  

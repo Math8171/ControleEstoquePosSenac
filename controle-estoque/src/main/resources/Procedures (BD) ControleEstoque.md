@@ -1,4 +1,5 @@
 **1. Tabela Estoque:**
+
 SQL
 ```
 CREATE TABLE Estoque (
@@ -29,6 +30,7 @@ END;
 /
 ```
 **2. Tabela Produto:**
+
 SQL
 ```
 CREATE TABLE Produto (
@@ -80,6 +82,7 @@ END;
 ```
 
 **4. Tabela Fornecedor:**
+
 SQL
 ```
 CREATE TABLE Fornecedor (
@@ -111,6 +114,7 @@ END;
 ```
 
 **5. Tabela Movimentação:**
+
 SQL
 ```
 CREATE TABLE Movimentacao (
@@ -148,6 +152,7 @@ END;
 ```
 
 **6. Tabela TP_Movimentação:**
+
 SQL
 ```
 CREATE TABLE TP_Movimentacao (
@@ -168,3 +173,29 @@ BEGIN
   ';
 END;
 /
+```
+**7. Tabela LOJA:**
+
+SQL
+
+```
+CREATE TABLE Loja (
+  ID_LOJA NUMBER PRIMARY KEY,
+  FK_ID_PROD NUMBER NOT NULL REFERENCES Produto(ID_PROD),
+  LOJA_QTDE_PROD NUMBER NOT NULL,
+  LOJA_VALOR_TOTAL NUMBER NOT NULL,
+  LOJA_QTDE_MIN_LOJA NUMBER NOT NULL
+);
+```
+
+PL/SQL
+```
+CREATE TABLE Loja (
+  ID_LOJA NUMBER PRIMARY KEY,
+  FK_ID_PROD NUMBER NOT NULL REFERENCES Produto(ID_PROD),
+  LOJA_QTDE_PROD NUMBER NOT NULL,
+  LOJA_VALOR_TOTAL NUMBER NOT NULL,
+  LOJA_QTDE_MIN_LOJA NUMBER NOT NULL
+);
+
+```

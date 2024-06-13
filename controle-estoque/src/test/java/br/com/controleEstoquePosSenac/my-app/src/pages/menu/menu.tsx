@@ -27,9 +27,13 @@ function Menu() {
                         <FaBox size={20} style={{ marginRight: '10px' }} />
                         PRODUTOS
                     </NavLink>
-                    <NavLink to="/depositos" activeClassName="active" className="botaoMenu">
+                    <NavLink to="/estoque" activeClassName="active" className="botaoMenu">
                         <FaWarehouse size={20} style={{ marginRight: '10px' }} />
                         ESTOQUE
+                    </NavLink>
+                    <NavLink to="/fornecedores" activeClassName="active" className="botaoMenu">
+                        <FaTruck size={20} style={{ marginRight: '10px' }} />
+                        FORNECEDORES
                     </NavLink>
                     <NavLink to="/movimentacao" activeClassName="active" className="botaoMenu">
                         <FaExchangeAlt size={20} style={{ marginRight: '10px' }} />

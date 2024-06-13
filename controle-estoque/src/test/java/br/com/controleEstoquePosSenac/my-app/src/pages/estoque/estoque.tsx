@@ -1,12 +1,15 @@
-import React, { useState} from 'react';
-import './produtos.css';
+import React, { useState } from 'react';
+import './estoque.css';
 import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaHistory, FaSearch, FaUser } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 import { TbShoppingBagPlus, TbShoppingBagEdit, TbShoppingBagMinus, TbShoppingBagExclamation, TbSearch } from "react-icons/tb";
-import { NavLink} from 'react-router-dom';
 
-function Produto() {
+
+function Estoque() {
 
   return (
+
+
     <div className="menu-container">
       <div className="menu-box">
         <div className="profile-container">
@@ -16,11 +19,11 @@ function Produto() {
           <h1>Jori Almeida</h1>
         </div>
         <div className="button-container">
-          <NavLink to="/produtos" activeClassName="active" className="botaoMenuProduto">
+          <NavLink to="/produtos" activeClassName="active" className="botaoMenu">
             <FaBox size={20} style={{ marginRight: '10px' }} />
             PRODUTOS
           </NavLink>
-          <NavLink to="/estoque" activeClassName="active" className="botaoMenu">
+          <NavLink to="/estoque" activeClassName="active" className="botaoMenuEstoque">
             <FaWarehouse size={20} style={{ marginRight: '10px' }} />
             ESTOQUE
           </NavLink>
@@ -42,29 +45,30 @@ function Produto() {
           </NavLink>
         </div>
       </div>
-      <div className="produtos-box">
-        <div className="textoProduto">
-          <h1>PRODUTOS</h1>
+      <div className="estoque-box">
+        <div className="textoEstoque">
+          <h1>ESTOQUE</h1>
         </div>
-        <div className="search-bar">
+        <div className="estoque-bar">
           <input className="inputBusca" type="text" placeholder="Digite o nome do produto:" />
-          <NavLink to="/buscarProduto" className="botaoCadastroProduto">
+          <NavLink to="/buscarEstoque" className="botaoCadastroProduto">
             <TbSearch size={35} />
           </NavLink>
         </div>
-        <table className="tableProdutos">
+        <table className="tableEstoque">
           <thead>
             <tr>
-              <th>ID</th>
-              <th>Nome</th>
-              <th>Descricao</th>
-              <th>Fornecedor</th>
+              <th>Código</th>
+              <th>Produto</th>
+              <th>Quant. Estoque</th>
+              <th>Quant. Minima</th>
+              <th>Preço Médio</th>
             </tr>
           </thead>
           <tbody>
             {Array.from({ length: 10 }, (_, rowIndex) => (
               <tr key={rowIndex}>
-                {Array.from({ length: 4 }, (_, colIndex) => (
+                {Array.from({ length: 5 }, (_, colIndex) => (
                   <td key={colIndex}>
                     Celula {rowIndex + 1}-{colIndex + 1}
                   </td>
@@ -75,18 +79,18 @@ function Produto() {
         </table>
         <div className="iconesCrud">
           <div>
-            <NavLink to="/reposicaoProdutos" activeClassName="active" className="botaoCadastroProduto">
+            <NavLink to="/pontoReposicao" activeClassName="active" className="botaoCadastroEstoque">
               <TbShoppingBagExclamation size={45} />
             </NavLink>
           </div>
           <div className="boxBotaoCadastro">
-            <NavLink to="/cadastroProdutos" activeClassName="active" className="botaoCadastroProduto">
+            <NavLink to="/cadastroProduto" activeClassName="active" className="botaoCadastroEstoque">
               <TbShoppingBagPlus size={45} />
             </NavLink>
-            <NavLink to="/editarProdutos" activeClassName="active" className="botaoCadastroProduto">
+            <NavLink to="/editarProduto" activeClassName="active" className="botaoCadastroEstoque">
               <TbShoppingBagEdit size={45} />
             </NavLink>
-            <NavLink to="/excluirProduto" activeClassName="active" className="botaoCadastroProduto">
+            <NavLink to="/excluirProduto" activeClassName="active" className="botaoCadastroEstoque">
               <TbShoppingBagMinus size={45} />
             </NavLink>
           </div>
@@ -97,4 +101,4 @@ function Produto() {
   );
 }
 
-export default Produto;
+export default Estoque;

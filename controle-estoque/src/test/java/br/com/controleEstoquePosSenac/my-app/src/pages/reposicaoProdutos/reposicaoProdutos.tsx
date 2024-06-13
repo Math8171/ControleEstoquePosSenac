@@ -1,10 +1,10 @@
 import React, { useState} from 'react';
-import './produtos.css';
+import './reposicaoProdutos.css';
 import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaHistory, FaSearch, FaUser } from 'react-icons/fa';
 import { TbShoppingBagPlus, TbShoppingBagEdit, TbShoppingBagMinus, TbShoppingBagExclamation, TbSearch } from "react-icons/tb";
 import { NavLink} from 'react-router-dom';
 
-function Produto() {
+function ReposicaoProduto() {
 
   return (
     <div className="menu-container">
@@ -44,7 +44,7 @@ function Produto() {
       </div>
       <div className="produtos-box">
         <div className="textoProduto">
-          <h1>PRODUTOS</h1>
+          <h1>PRODUTOS EM REPOSIÇÃO</h1>
         </div>
         <div className="search-bar">
           <input className="inputBusca" type="text" placeholder="Digite o nome do produto:" />
@@ -56,8 +56,8 @@ function Produto() {
           <thead>
             <tr>
               <th>ID</th>
-              <th>Nome</th>
-              <th>Descricao</th>
+              <th>Produto</th>
+              <th>Quantidade</th>
               <th>Fornecedor</th>
             </tr>
           </thead>
@@ -73,28 +73,11 @@ function Produto() {
             ))}
           </tbody>
         </table>
-        <div className="iconesCrud">
-          <div>
-            <NavLink to="/reposicaoProdutos" activeClassName="active" className="botaoCadastroProduto">
-              <TbShoppingBagExclamation size={45} />
-            </NavLink>
-          </div>
-          <div className="boxBotaoCadastro">
-            <NavLink to="/cadastroProdutos" activeClassName="active" className="botaoCadastroProduto">
-              <TbShoppingBagPlus size={45} />
-            </NavLink>
-            <NavLink to="/editarProdutos" activeClassName="active" className="botaoCadastroProduto">
-              <TbShoppingBagEdit size={45} />
-            </NavLink>
-            <NavLink to="/excluirProduto" activeClassName="active" className="botaoCadastroProduto">
-              <TbShoppingBagMinus size={45} />
-            </NavLink>
-          </div>
-        </div>
+
       </div>
     </div>
 
   );
 }
 
-export default Produto;
+export default ReposicaoProduto;

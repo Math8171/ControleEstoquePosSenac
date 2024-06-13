@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './estoque.css';
+import './loja.css';
 import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaHistory, FaSearch, FaUser } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import { TbShoppingBagPlus, TbShoppingBagEdit, TbShoppingBagMinus, TbShoppingBagExclamation, TbSearch } from "react-icons/tb";
@@ -23,15 +23,15 @@ function Estoque() {
             <FaBox size={20} style={{ marginRight: '10px' }} />
             PRODUTOS
           </NavLink>
-          <NavLink activeClassName="active" className="botaoMenuDepositos">
+          <NavLink activeClassName="active" className="botaoSubMenuDepositos">
             <FaWarehouse size={20} style={{ marginRight: '10px' }} />
             DEPOSITOS
           </NavLink>
-          <NavLink to="/loja" activeClassName="active" className="botaoSubMenuLojaEstoque">
+          <NavLink to="/loja" activeClassName="active" className="botaoSubMenuLoja">
             <FaWarehouse size={20} style={{ marginRight: '10px' }} />
             LOJA
           </NavLink>
-          <NavLink to="/estoque" activeClassName="active" className="botaoSubMenuEstoque">
+          <NavLink to="/estoque" activeClassName="active" className="botaoSubMenuEstoqueLoja">
             <FaWarehouse size={20} style={{ marginRight: '10px' }} />
             ESTOQUE
           </NavLink>
@@ -53,24 +53,24 @@ function Estoque() {
           </NavLink>
         </div>
       </div>
-      <div className="estoque-box">
-        <div className="textoEstoque">
-          <h1>ESTOQUE</h1>
+      <div className="loja-box">
+        <div className="textoLoja">
+          <h1>LOJA</h1>
         </div>
-        <div className="estoque-bar">
+        <div className="loja-bar">
           <input className="inputBusca" type="text" placeholder="Digite o nome do produto:" />
           <NavLink to="/buscarEstoque" className="botaoCadastroProduto">
             <TbSearch size={35} />
           </NavLink>
         </div>
-        <table className="tableEstoque">
+        <table className="tableLoja">
           <thead>
             <tr>
               <th>Código</th>
               <th>Produto</th>
-              <th>Quant. Estoque</th>
+              <th>Quant. Produto</th>
               <th>Quant. Minima</th>
-              <th>Preço Médio</th>
+              <th>Valor Total</th>
             </tr>
           </thead>
           <tbody>
@@ -85,6 +85,7 @@ function Estoque() {
             ))}
           </tbody>
         </table>
+
       </div>
     </div>
 

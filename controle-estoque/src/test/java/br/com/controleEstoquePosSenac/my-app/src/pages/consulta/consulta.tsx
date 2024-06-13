@@ -19,10 +19,18 @@ function Consulta() {
             <FaBox size={20} style={{ marginRight: '10px' }} />
             PRODUTOS
           </NavLink>
-          <NavLink to="/estoque" activeClassName="active" className="botaoMenu">
-            <FaWarehouse size={20} style={{ marginRight: '10px' }} />
-            DEPÓSITOS
-          </NavLink>
+          <NavLink activeClassName="active" className="botaoMenu">
+                        <FaWarehouse size={20} style={{ marginRight: '10px' }} />
+                        DEPOSITOS
+                    </NavLink>
+                    <NavLink to="/loja" activeClassName="active" className="botaoSubMenu">
+                        <FaWarehouse size={20} style={{ marginRight: '10px' }} />
+                        LOJA
+                    </NavLink>
+                    <NavLink to="/estoque" activeClassName="active" className="botaoSubMenu">
+                        <FaWarehouse size={20} style={{ marginRight: '10px' }} />
+                        ESTOQUE
+                    </NavLink>
           <NavLink to="/fornecedores" activeClassName="active" className="botaoMenu">
             <FaTruck size={20} style={{ marginRight: '10px' }} />
             FORNECEDORES

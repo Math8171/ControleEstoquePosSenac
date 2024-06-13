@@ -8,10 +8,12 @@ import CadastroProdutos from "./pages/cadastroProdutos/cadastroProdutos.tsx";
 import EditarProdutos from "./pages/editarProdutos/editarProdutos.tsx";
 import ReposicaoProdutos from "./pages/reposicaoProdutos/reposicaoProdutos.tsx";
 import Estoque from "./pages/estoque/estoque.tsx";
+import Loja from "./pages/loja/loja.tsx";
 import Fornecedores from "./pages/fornecedores/fornecedores.tsx";
 import CadastroFornecedores from "./pages/cadastroFornecedores/cadastroFornecedores.tsx";
 import EditarFornecedores from "./pages/editarFornecedores/editarFornecedores.tsx";
 import Movimentacao from "./pages/movimentacao/movimentacao.tsx";
+import MovimentacaoFinanceira from "./pages/movimentacaoFinanceira/movimentacaoFinanceira.tsx";
 //import Extrato from "./pages/extrato/extrato.tsx";
 //import Consulta from "./pages/consulta/consulta.tsx";
 
@@ -35,6 +37,8 @@ function App() {
       <Route path="/cadastroFornecedores" element={<CadastroFornecedores />} />
       <Route path="/editarFornecedores" element={<EditarFornecedores />} />
       <Route path="/movimentacao" element={<Movimentacao />} />
+      <Route path="/movimentacaoFinanceira" element={<MovimentacaoFinanceira />} />
+      <Route path="/loja" element={<Loja />} />
       {/*
     <Route path="/teste" element={<Teste />} />
     <Route path="/extrato" element={<Extrato />} />

@@ -20,7 +20,15 @@ function Movimentacao() {
             <FaBox size={20} style={{ marginRight: '10px' }} />
             PRODUTOS
           </NavLink>
-          <NavLink to="/estoque" activeClassName="active" className="botaoMenu">
+          <NavLink activeClassName="active" className="botaoMenu">
+            <FaWarehouse size={20} style={{ marginRight: '10px' }} />
+            DEPOSITOS
+          </NavLink>
+          <NavLink to="/loja" activeClassName="active" className="botaoSubMenu">
+            <FaWarehouse size={20} style={{ marginRight: '10px' }} />
+            LOJA
+          </NavLink>
+          <NavLink to="/estoque" activeClassName="active" className="botaoSubMenu">
             <FaWarehouse size={20} style={{ marginRight: '10px' }} />
             ESTOQUE
           </NavLink>
@@ -81,7 +89,7 @@ function Movimentacao() {
             </NavLink>
           </div>
           <div className="boxBotaoMovimentacao">
-            <NavLink to="/cadastroMovimentacao" activeClassName="active" className="botaoCadastroMovimentacao">
+            <NavLink to="/movimentacaoFinanceira" activeClassName="active" className="botaoCadastroMovimentacao">
               <TbShoppingBagPlus size={45} />
             </NavLink>
             <NavLink to="/editarMovimentacao" activeClassName="active" className="botaoCadastroMovimentacao">

@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
-import './cadastroProdutos.css';
+import './movimentacaoFinanceira.css';
 import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaHistory, FaSearch, FaUser } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
 function CadastroProduto() {
 
-  const [CadastroProdutoFormData, setCadastroProdutoFormData] = useState({
-    CadastroProdutoNome: '',
-    CadastroProdutoDescricao: '',
-    CadastroProdutoPreco: '',
-    CadastroProdutoQuantidade: ''
+  const [MovimentacaoFinanceiraFormData, setMovimentacaoFinanceiraFormData] = useState({
+    MovimentacaoFinanceiraNome: '',
+    MovimentacaoFinanceiraDescricao: '',
+    MovimentacaoFinanceiraPreco: '',
+    MovimentacaoFinanceiraQuantidade: ''
   });
 
-  const handleCadastroProdutoChange = (e) => {
+  const handleMovimentacaoFinanceiraChange = (e) => {
     const { name, value } = e.target;
-    setCadastroProdutoFormData({
-      ...CadastroProdutoFormData,
+    setMovimentacaoFinanceiraFormData({
+      ...MovimentacaoFinanceiraFormData,
       [name]: value
     });
   };
@@ -70,54 +70,54 @@ function CadastroProduto() {
           </NavLink>
         </div>
       </div>
-      <div className="CadastroProdutoFormContainer">
-        <h1>Cadastro de Produto</h1>
+      <div className="MovimentacaoFinanceiraFormContainer">
+        <h1>Movimentação Financeira</h1>
         <form onSubmit={handleCadastroProdutoSubmit}>
-          <div className="boxFormularioCadastroProdutos">
-          <div className="CadastroProdutoFormGroup">
-            <label htmlFor="CadastroProdutoNome">Nome do Produto:</label>
+          <div className="boxFormularioMovimentacaoFinanceira">
+          <div className="MovimentacaoFinanceiraFormGroup">
+            <label htmlFor="MovimentacaoFinanceiraNome">Nome do Produto:</label>
             <input
               type="text"
-              id="CadastroProdutoNome"
-              name="CadastroProdutoNome"
-              value={CadastroProdutoFormData.CadastroProdutoNome}
-              onChange={handleCadastroProdutoChange}
+              id="MovimentacaoFinanceiraNome"
+              name="MovimentacaoFinanceiraNome"
+              value={MovimentacaoFinanceiraFormData.MovimentacaoFinanceiraNome}
+              onChange={handleMovimentacaoFinanceiraChange}
               required
             />
           </div>
-          <div className="CadastroProdutoFormGroup">
-            <label htmlFor="CadastroProdutoDescricao">Descrição:</label>
+          <div className="MovimentacaoFinanceiraFormGroup">
+            <label htmlFor="MovimentacaoFinanceiraDescricao">Descrição:</label>
             <textarea
-              id="CadastroProdutoDescricao"
-              name="CadastroProdutoDescricao"
-              value={CadastroProdutoFormData.CadastroProdutoDescricao}
-              onChange={handleCadastroProdutoChange}
+              id="MovimentacaoFinanceiraDescricao"
+              name="MovimentacaoFinanceiraDescricao"
+              value={MovimentacaoFinanceiraFormData.MovimentacaoFinanceiraDescricao}
+              onChange={handleMovimentacaoFinanceiraChange}
               required
             ></textarea>
           </div>
-          <div className="CadastroProdutoFormGroup">
-            <label htmlFor="CadastroProdutoPreco">Preço:</label>
+          <div className="MovimentacaoFinanceiraFormGroup">
+            <label htmlFor="MovimentacaoFinanceiraPreco">Preço:</label>
             <input
               type="number"
-              id="CadastroProdutoPreco"
-              name="CadastroProdutoPreco"
-              value={CadastroProdutoFormData.CadastroProdutoPreco}
-              onChange={handleCadastroProdutoChange}
+              id="MovimentacaoFinanceiraPreco"
+              name="MovimentacaoFinanceiraPreco"
+              value={MovimentacaoFinanceiraFormData.MovimentacaoFinanceiraPreco}
+              onChange={handleMovimentacaoFinanceiraChange}
               required
             />
           </div>
-          <div className="CadastroProdutoFormGroup">
-            <label htmlFor="CadastroProdutoQuantidade">Quantidade:</label>
+          <div className="MovimentacaoFinanceiraFormGroup">
+            <label htmlFor="MovimentacaoFinanceiraQuantidade">Quantidade:</label>
             <input
               type="number"
-              id="CadastroProdutoQuantidade"
-              name="CadastroProdutoQuantidade"
-              value={CadastroProdutoFormData.CadastroProdutoQuantidade}
-              onChange={handleCadastroProdutoChange}
+              id="MovimentacaoFinanceiraQuantidade"
+              name="MovimentacaoFinanceiraQuantidade"
+              value={MovimentacaoFinanceiraFormData.MovimentacaoFinanceiraQuantidade}
+              onChange={handleMovimentacaoFinanceiraChange}
               required
             />
           </div>
-          <button type="submit" className="CadastroProdutoSubmitButton">Cadastrar Produto</button>
+          <button type="submit" className="MovimentacaoFinanceiraSubmitButton">Cadastrar Produto</button>
           </div>
         </form>
       </div>

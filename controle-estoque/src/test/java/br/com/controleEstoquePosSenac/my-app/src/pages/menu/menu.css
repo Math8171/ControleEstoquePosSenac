@@ -54,6 +54,18 @@
     align-items: center;
     text-decoration: none;
   }
+
+  .botaoSubMenu{
+    padding: 0px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #2f4f4f;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 10px;
+  }
   
   .botaoMenu:hover {
     background-color: #3d6d6d;

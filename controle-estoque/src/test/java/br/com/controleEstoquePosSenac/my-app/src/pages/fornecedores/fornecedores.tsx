@@ -20,7 +20,15 @@ function Fornecedores() {
             <FaBox size={20} style={{ marginRight: '10px' }} />
             PRODUTOS
           </NavLink>
-          <NavLink to="/estoque" activeClassName="active" className="botaoMenu">
+          <NavLink activeClassName="active" className="botaoMenu">
+            <FaWarehouse size={20} style={{ marginRight: '10px' }} />
+            DEPOSITOS
+          </NavLink>
+          <NavLink to="/loja" activeClassName="active" className="botaoSubMenu">
+            <FaWarehouse size={20} style={{ marginRight: '10px' }} />
+            LOJA
+          </NavLink>
+          <NavLink to="/estoque" activeClassName="active" className="botaoSubMenu">
             <FaWarehouse size={20} style={{ marginRight: '10px' }} />
             ESTOQUE
           </NavLink>
@@ -77,9 +85,7 @@ function Fornecedores() {
         </table>
         <div className="iconesCrud">
           <div>
-            <NavLink to="/pontoReposicao" activeClassName="active" className="botaoFornecedores">
-              <TbShoppingBagExclamation size={45} />
-            </NavLink>
+
           </div>
           <div className="boxBotaoFornecedores">
             <NavLink to="/cadastroFornecedores" activeClassName="active" className="botaoFornecedores">

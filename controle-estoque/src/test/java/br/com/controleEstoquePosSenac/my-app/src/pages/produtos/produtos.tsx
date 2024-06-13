@@ -20,7 +20,15 @@ function Produto() {
             <FaBox size={20} style={{ marginRight: '10px' }} />
             PRODUTOS
           </NavLink>
-          <NavLink to="/estoque" activeClassName="active" className="botaoMenu">
+          <NavLink activeClassName="active" className="botaoMenu">
+            <FaWarehouse size={20} style={{ marginRight: '10px' }} />
+            DEPOSITOS
+          </NavLink>
+          <NavLink to="/loja" activeClassName="active" className="botaoSubMenu">
+            <FaWarehouse size={20} style={{ marginRight: '10px' }} />
+            LOJA
+          </NavLink>
+          <NavLink to="/estoque" activeClassName="active" className="botaoSubMenu">
             <FaWarehouse size={20} style={{ marginRight: '10px' }} />
             ESTOQUE
           </NavLink>
@@ -46,8 +54,14 @@ function Produto() {
         <div className="textoProduto">
           <h1>PRODUTOS</h1>
         </div>
-        <div className="search-bar">
+        <div className="produto-bar">
           <input className="inputBusca" type="text" placeholder="Digite o nome do produto:" />
+          <NavLink to="/buscarProduto" className="botaoCadastroProduto">
+            <TbSearch size={35} />
+          </NavLink>
+        </div>
+        <div className="produtoFornecedor-bar">
+          <input className="inputBusca" type="text" placeholder="Digite o nome do fornecedor:" />
           <NavLink to="/buscarProduto" className="botaoCadastroProduto">
             <TbSearch size={35} />
           </NavLink>

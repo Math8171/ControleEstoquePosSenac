@@ -1,25 +1,25 @@
 .menu-container {
     display: flex;
     height: 100vh;
-  }
-  
-  .menu-box {
+}
+
+.menu-box {
     background-color: #2f4f4f;
     flex: 1;
     display: flex;
     flex-direction: column;
-  }
-  
-  .profile-container {
+}
+
+.profile-container {
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid;
-  }
-  
-  .image-placeholder {
+}
+
+.image-placeholder {
     width: 120px;
     height: 120px;
     background-color: #f0f0f0;
@@ -28,22 +28,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .image-placeholder svg {
+}
+
+.image-placeholder svg {
     width: 60px;
     height: 60px;
-  }
-  
-  .button-container {
+}
+
+.button-container {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-  }
-  
-  .botaoMenu {
+}
+
+.botaoMenu {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -52,14 +52,14 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-  }
-  
-  .botaoMenu:hover {
+}
+
+.botaoMenu:hover {
     background-color: #3d6d6d;
     color: black;
-  }
-  
-  .botaoMenuProduto{
+}
+
+.botaoMenuProduto {
     padding: 10px 20px;
     border: none;
     background-color: #2f4f4f;
@@ -67,125 +67,152 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-  }
-  
-  /*SEGURANDA PARTE*/
-  
-  .produtos-box {
+}
+
+/*SEGURANDA PARTE*/
+
+.loja-box {
     background-color: white;
     flex: 5;
     border: 1px solid;
     justify-content: center;
-  }
-  
-  .produtos-box h1{
+}
+
+.loja-box h1 {
     text-align: center;
     margin-top: 70px;
     font-weight: bold;
     font-size: 70px
-  }
-  
-  .produto-bar {
-    display: flex;
-    justify-content: end;
-    padding: 10px 40px 10px 10px;
-    margin-top: 50px;
-  
-  }
+}
 
-  .produtoFornecedor-bar {
+.loja-bar {
     display: flex;
     justify-content: end;
     padding: 10px 40px 10px 10px;
     margin-bottom: 50px;
-  
-  }
-  
-  .search-bar button {
+    margin-top: 50px;
+
+}
+
+.loja-bar button {
     height: 35px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .tableProdutos {
+}
+
+.tableLoja {
     margin-left: 70px;
     width: 90%;
     border-collapse: collapse;
     border: 1px solid;
-  
-  }
-  
-  .tableProdutos th, .tableProdutos td {
+
+}
+
+.tableLoja th,
+.tableLoja td {
     border-bottom: 1px solid #dcdcdc;
     text-align: center;
     border: 1px solid;
-  }
-  
-  .tableProdutos th {
+}
+
+.tableLoja th {
     background-color: #778899;
     text-align: center;
-  }
-  
-  .botaoBuscar {
+}
+
+.botaoBuscar {
     width: 100px;
     height: 30px;
     margin-right: 130px;
-  }
-  .inputBusca::placeholder{
-    color:black;
-  
-  }
-  
-  .inputBusca:hover{
+}
+
+.inputBusca::placeholder {
+    color: black;
+
+}
+
+.inputBusca:hover {
     background-color: white;
-  }
-  
-  .inputBusca {
+}
+
+.inputBusca {
     background-color: #dcdcdc;
     width: 600px;
     height: 30px;
     margin-right: 20px;
-    border: 0.1px solid #778899;;
+    border: 0.1px solid #778899;
+    ;
     border-radius: 8px;
-  }
-  
-  .iconesCrud{
+}
+
+.iconesCrud {
     padding: 10px;
     display: flex;
     justify-content: space-between;
     margin-left: 80px;
-  }
-  
-  .boxBotaoCadastro{
+}
+
+.boxBotaoLoja {
     display: flex;
     justify-content: end;
     margin-right: 40px;
-  }
-  
-  .botaoCadastroProduto{
+}
+
+.botaoCadastroLoja {
     margin-right: 20px;
     color: black;
-  }
-  
-  .textoProduto h1{
+}
+
+.textoLoja h1 {
     font-size: 50px;
     font-weight: bold;
-  }
-  
-  .textoProduto {
+}
+
+.textoLoja {
     margin-top: -40px;
-  }
-  
-  tbody tr:nth-child(odd) {
+}
+
+tbody tr:nth-child(odd) {
     background-color: #dcdcdc;
-  }
-  
-  tbody tr:nth-child(even) {
+}
+
+tbody tr:nth-child(even) {
     background-color: #ffffff;
+}
+
+.botaoSubMenuLoja {
+    padding: 0px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #2f4f4f;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.botaoSubMenuDepositos {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #2f4f4f;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.botaoSubMenuEstoqueLoja{
+    padding: 0px 20px;
+    border: none;
+    background-color: #2f4f4f;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size:10px
   }
-  
-  
-  

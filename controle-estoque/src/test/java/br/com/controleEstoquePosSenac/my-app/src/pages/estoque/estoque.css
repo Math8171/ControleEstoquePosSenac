@@ -180,7 +180,7 @@ tbody tr:nth-child(even) {
   background-color: #ffffff;
 }
 
-.botaoMenuEstoque{
+.botaoMenuDepositos{
   padding: 10px 20px;
   border: none;
   background-color: #2f4f4f;
@@ -190,4 +190,25 @@ tbody tr:nth-child(even) {
   text-decoration: none;
 }
 
+.botaoSubMenuEstoque{
+  padding: 0px 20px;
+  border: none;
+  background-color: #2f4f4f;
+  color: yellow;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size:10px
+}
+
+.botaoSubMenuLojaEstoque{
+  padding: 0px 20px;
+  border: none;
+  background-color: #2f4f4f;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size:10px
+}
 

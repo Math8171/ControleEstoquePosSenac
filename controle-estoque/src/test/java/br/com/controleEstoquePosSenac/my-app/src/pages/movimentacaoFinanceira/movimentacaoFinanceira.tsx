@@ -65,7 +65,7 @@ function CadastroProduto() {
                 </div>
             </div>
             <div className="MovimentacaoFinanceiraFormContainer">
-                <h1>Movimentação Financeira</h1>
+                <h1>Movimentação Estoque</h1>
                 <form onSubmit={handleCadastroProdutoSubmit}>
                     <div className="boxFormularioMovimentacaoFinanceira">
                         <div className="MovimentacaoFinanceiraFormGroup">

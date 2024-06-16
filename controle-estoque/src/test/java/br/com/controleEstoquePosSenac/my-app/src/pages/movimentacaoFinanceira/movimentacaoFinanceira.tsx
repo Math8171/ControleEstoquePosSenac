@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import './movimentacaoFinanceira.css';
-import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaHistory, FaSearch, FaUser } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
 import ComponentMenu from "../../components/componentMenu/componentMenu.tsx";
 
-function CadastroProduto() {
+function MovimentacaoFinanceira() {
 
     const [MovimentacaoFinanceiraFormData, setMovimentacaoFinanceiraFormData] = useState({
         MovimentacaoFinanceiraProduto: '',
@@ -26,9 +24,10 @@ function CadastroProduto() {
     const handleCadastroProdutoSubmit = (e) => {
         e.preventDefault();
         // Aqui você pode adicionar a lógica para enviar os dados para o servidor
-        console.log('Dados do formulário:', CadastroProdutoFormData);
-        alert('Cadastro de produto realizado com sucesso!');
+        console.log('Dados do formulário:', MovimentacaoFinanceiraFormData);
+        alert('Movimentação registrada com sucesso!');
     };
+
     return (
         <ComponentMenu>
             <div className="menu-container">
@@ -50,7 +49,7 @@ function CadastroProduto() {
                             <div className="MovimentacaoFinanceiraFormGroup">
                                 <label htmlFor="MovimentacaoFinanceiraTipoMovimentacao">Tipo de Movimentação:</label>
                                 <input
-                                    type="number"
+                                    type="text"
                                     id="MovimentacaoFinanceiraTipoMovimentacao"
                                     name="MovimentacaoFinanceiraTipoMovimentacao"
                                     value={MovimentacaoFinanceiraFormData.MovimentacaoFinanceiraTipoMovimentacao}
@@ -61,7 +60,7 @@ function CadastroProduto() {
                             <div className="MovimentacaoFinanceiraFormGroup">
                                 <label htmlFor="MovimentacaoFinanceiraLoja">Loja:</label>
                                 <input
-                                    type="number"
+                                    type="text"
                                     id="MovimentacaoFinanceiraLoja"
                                     name="MovimentacaoFinanceiraLoja"
                                     value={MovimentacaoFinanceiraFormData.MovimentacaoFinanceiraLoja}
@@ -69,7 +68,6 @@ function CadastroProduto() {
                                     required
                                 />
                             </div>
-
                             <div className="MovimentacaoFinanceiraFormGroup">
                                 <label htmlFor="MovimentacaoFinanceiraQuantidadeMovimentacao">Quantidade Movimentação:</label>
                                 <input
@@ -95,7 +93,7 @@ function CadastroProduto() {
                             <div className="MovimentacaoFinanceiraFormGroup">
                                 <label htmlFor="MovimentacaoFinanceiraDataMovimentacao">Data da Movimentação:</label>
                                 <input
-                                    type="text"
+                                    type="date"
                                     id="MovimentacaoFinanceiraDataMovimentacao"
                                     name="MovimentacaoFinanceiraDataMovimentacao"
                                     value={MovimentacaoFinanceiraFormData.MovimentacaoFinanceiraDataMovimentacao}
@@ -112,4 +110,4 @@ function CadastroProduto() {
     );
 }
 
-export default CadastroProduto;
+export default MovimentacaoFinanceira;

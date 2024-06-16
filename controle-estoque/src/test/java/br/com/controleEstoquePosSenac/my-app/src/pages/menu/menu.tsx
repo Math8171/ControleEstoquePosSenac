@@ -17,7 +17,7 @@ function Menu() {
     return (
         <ComponentMenu>
             <div className="menu-container">
-                <div className="segunda-box">
+                <div className="segunda-box" aria-label="Bem vindo">
                     <h1>BEM VINDO</h1>
 
                 </div>

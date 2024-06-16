@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './fornecedores.css';
-import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaHistory, FaSearch, FaUser } from 'react-icons/fa';
-import { TbShoppingBagPlus, TbShoppingBagEdit, TbShoppingBagMinus, TbShoppingBagExclamation, TbSearch } from "react-icons/tb";
+import { TbShoppingBagPlus, TbShoppingBagEdit, TbShoppingBagMinus, TbSearch } from "react-icons/tb";
 import { NavLink } from 'react-router-dom';
 import ComponentMenu from "../../components/componentMenu/componentMenu.tsx";
 
 function Fornecedores() {
-
   return (
     <ComponentMenu>
       <div className="menu-container">
@@ -15,20 +13,20 @@ function Fornecedores() {
             <h1>FORNECEDORES</h1>
           </div>
           <div className="forncedor-bar">
-            <input className="inputBuscaFornecedor" type="text" placeholder="Digite o nome do fornecedor:" />
-            <NavLink to="/buscarProduto" className="botaoCadastroProduto">
-              <TbSearch size={35} />
+            <input className="inputBuscaFornecedor" type="text" placeholder="Digite o nome do fornecedor:" aria-label="Pesquisar fornecedor" />
+            <NavLink to="/buscarProduto" className="botaoCadastroProduto" aria-label="Buscar fornecedor">
+              <TbSearch size={35} aria-hidden="true" />
             </NavLink>
           </div>
           <table className="tableFornecedores">
             <thead>
               <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Telefone</th>
-                <th>E-mail</th>
-                <th>CNPJ</th>
-                <th>Endereco</th>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">CNPJ</th>
+                <th scope="col">Endereço</th>
               </tr>
             </thead>
             <tbody>
@@ -48,14 +46,14 @@ function Fornecedores() {
 
             </div>
             <div className="boxBotaoFornecedores">
-              <NavLink to="/cadastroFornecedores" activeClassName="active" className="botaoFornecedores">
-                <TbShoppingBagPlus size={45} />
+              <NavLink to="/cadastroFornecedores" activeClassName="active" className="botaoFornecedores" aria-label="Cadastrar fornecedor">
+                <TbShoppingBagPlus size={45} aria-hidden="true" />
               </NavLink>
-              <NavLink to="/editarFornecedores" activeClassName="active" className="botaoFornecedores">
-                <TbShoppingBagEdit size={45} />
+              <NavLink to="/editarFornecedores" activeClassName="active" className="botaoFornecedores" aria-label="Editar fornecedor">
+                <TbShoppingBagEdit size={45} aria-hidden="true" />
               </NavLink>
-              <NavLink to="/excluirProduto" activeClassName="active" className="botaoFornecedores">
-                <TbShoppingBagMinus size={45} />
+              <NavLink to="/excluirProduto" activeClassName="active" className="botaoFornecedores" aria-label="Excluir fornecedor">
+                <TbShoppingBagMinus size={45} aria-hidden="true" />
               </NavLink>
             </div>
           </div>

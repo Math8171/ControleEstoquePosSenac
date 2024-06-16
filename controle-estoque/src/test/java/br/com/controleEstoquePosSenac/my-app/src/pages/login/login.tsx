@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import './login.css';
 import LogoEntrada from '../../imagens/logo.PNG';
-import { useNavigate, useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
-
-  const navegacao = useNavigate();
+  const navigate = useNavigate();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -24,11 +22,11 @@ function Login() {
 
   return (
     <div className="containerLogin">
-        <div className="imagemLogin">
-          <img src={LogoEntrada} className="imagem" alt="voltar" />
+      <div className="imagemLogin">
+        <img src={LogoEntrada} className="imagem" alt="Logo da empresa" />
       </div>
-        <div className="login-container">
-        <div className="login-informacaoes">
+      <div className="login-container">
+        <div className="login-informacoes">
           <h2 className="textoLogin">Login</h2>
           <form onSubmit={handleLogin}>
             <div className="form-group">
@@ -51,11 +49,11 @@ function Login() {
                 required
               />
             </div>
-            {error && <p style={{ color: 'red' }}>{error}</p>}
-            <button type="submit"  className = "botaoLogin">Login</button>
+            {error && <p role="alert" className="error-message">{error}</p>}
+            <button type="submit" className="botaoLogin">Login</button>
           </form>
         </div>
-    </div>
+      </div>
     </div>
   );
 }

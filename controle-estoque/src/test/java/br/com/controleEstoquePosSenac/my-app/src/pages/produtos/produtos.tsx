@@ -14,14 +14,16 @@ function Produto() {
             <h1>PRODUTOS</h1>
           </div>
           <div className="produto-bar">
-            <input className="inputBusca" type="text" placeholder="Digite o nome do produto:" />
-            <NavLink to="/buscarProduto" className="botaoCadastroProduto">
+            <label htmlFor="inputBuscaProduto" className="visually-hidden">Digite o nome do produto:</label>
+            <input id="inputBuscaProduto" className="inputBusca" type="text" placeholder="Digite o nome do produto:" />
+            <NavLink to="/buscarProduto" className="botaoCadastroProduto" aria-label="Buscar produto">
               <TbSearch size={35} />
             </NavLink>
           </div>
           <div className="produtoFornecedor-bar">
-            <input className="inputBusca" type="text" placeholder="Digite o nome do fornecedor:" />
-            <NavLink to="/buscarProduto" className="botaoCadastroProduto">
+            <label htmlFor="inputBuscaFornecedor" className="visually-hidden">Digite o nome do fornecedor:</label>
+            <input id="inputBuscaFornecedor" className="inputBusca" type="text" placeholder="Digite o nome do fornecedor:" />
+            <NavLink to="/buscarProduto" className="botaoCadastroProduto" aria-label="Buscar fornecedor">
               <TbSearch size={35} />
             </NavLink>
           </div>
@@ -30,7 +32,7 @@ function Produto() {
               <tr>
                 <th>ID</th>
                 <th>Nome</th>
-                <th>Descricao</th>
+                <th>Descrição</th>
                 <th>Fornecedor</th>
               </tr>
             </thead>
@@ -48,18 +50,18 @@ function Produto() {
           </table>
           <div className="iconesCrud">
             <div>
-              <NavLink to="/reposicaoProdutos" activeClassName="active" className="botaoCadastroProduto">
+              <NavLink to="/reposicaoProdutos" activeClassName="active" className="botaoCadastroProduto" aria-label="Reposição de produtos">
                 <TbShoppingBagExclamation size={45} />
               </NavLink>
             </div>
             <div className="boxBotaoCadastro">
-              <NavLink to="/cadastroProdutos" activeClassName="active" className="botaoCadastroProduto">
+              <NavLink to="/cadastroProdutos" activeClassName="active" className="botaoCadastroProduto" aria-label="Cadastrar produto">
                 <TbShoppingBagPlus size={45} />
               </NavLink>
-              <NavLink to="/editarProdutos" activeClassName="active" className="botaoCadastroProduto">
+              <NavLink to="/editarProdutos" activeClassName="active" className="botaoCadastroProduto" aria-label="Editar produto">
                 <TbShoppingBagEdit size={45} />
               </NavLink>
-              <NavLink to="/excluirProduto" activeClassName="active" className="botaoCadastroProduto">
+              <NavLink to="/excluirProduto" activeClassName="active" className="botaoCadastroProduto" aria-label="Excluir produto">
                 <TbShoppingBagMinus size={45} />
               </NavLink>
             </div>

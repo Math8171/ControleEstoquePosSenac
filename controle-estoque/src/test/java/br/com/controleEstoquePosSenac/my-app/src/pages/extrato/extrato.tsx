@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './extrato.css';
-import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaUser } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import { TbSearch } from "react-icons/tb";
 import ComponentMenu from "../../components/componentMenu/componentMenu.tsx";
@@ -14,19 +13,19 @@ function Extrato() {
             <h1>EXTRATO</h1>
           </div>
           <div className="extrato-bar">
-            <input className="inputBusca" type="text" placeholder="Digite o nome do produto:" />
-            <NavLink to="/buscarExtrato" className="botaoCadastroProduto">
-              <TbSearch size={35} />
+            <input className="inputBusca" type="text" placeholder="Digite o nome do produto:" aria-label="Pesquisar produto" />
+            <NavLink to="/buscarExtrato" className="botaoCadastroProduto" aria-label="Buscar produto">
+              <TbSearch size={35} aria-hidden="true" />
             </NavLink>
           </div>
           <table className="tableExtrato">
             <thead>
               <tr>
-                <th>Código</th>
-                <th>Produto</th>
-                <th>Quant. Estoque</th>
-                <th>Quant. Minima</th>
-                <th>Preço Médio</th>
+                <th scope="col">Código</th>
+                <th scope="col">Produto</th>
+                <th scope="col">Quant. Estoque</th>
+                <th scope="col">Quant. Mínima</th>
+                <th scope="col">Preço Médio</th>
               </tr>
             </thead>
             <tbody>

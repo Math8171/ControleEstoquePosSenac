@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './loja.css';
-import { FaBox, FaWarehouse, FaTruck, FaExchangeAlt, FaUser } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
 import { TbSearch } from "react-icons/tb";
+import { NavLink } from 'react-router-dom';
 import ComponentMenu from "../../components/componentMenu/componentMenu.tsx";
 
-function Estoque() {
-
+function Loja() {
   return (
-
     <ComponentMenu>
       <div className="menu-container">
         <div className="loja-box">
@@ -16,19 +13,19 @@ function Estoque() {
             <h1>LOJA</h1>
           </div>
           <div className="loja-bar">
-            <input className="inputBusca" type="text" placeholder="Digite o nome do produto:" />
-            <NavLink to="/buscarEstoque" className="botaoCadastroProduto">
-              <TbSearch size={35} />
+            <input className="inputBusca" type="text" placeholder="Digite o nome do produto:" aria-label="Buscar produto na loja" />
+            <NavLink to="/buscarEstoque" className="botaoCadastroProduto" aria-label="Buscar">
+              <TbSearch size={35} aria-hidden="true" />
             </NavLink>
           </div>
           <table className="tableLoja">
             <thead>
               <tr>
-                <th>Código</th>
-                <th>Produto</th>
-                <th>Quant. Produto</th>
-                <th>Quant. Minima</th>
-                <th>Valor Total</th>
+                <th scope="col">Código</th>
+                <th scope="col">Produto</th>
+                <th scope="col">Quantidade em Estoque</th>
+                <th scope="col">Quantidade Mínima</th>
+                <th scope="col">Valor Total</th>
               </tr>
             </thead>
             <tbody>
@@ -43,11 +40,10 @@ function Estoque() {
               ))}
             </tbody>
           </table>
-
         </div>
       </div>
     </ComponentMenu>
   );
 }
 
-export default Estoque;
+export default Loja;

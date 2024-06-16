@@ -14,8 +14,9 @@ function ReposicaoProduto() {
             <h1>PRODUTOS EM REPOSIÇÃO</h1>
           </div>
           <div className="search-bar">
-            <input className="inputBusca" type="text" placeholder="Digite o nome do produto:" />
-            <NavLink to="/buscarProduto" className="botaoCadastroProduto">
+            <label htmlFor="inputBuscaProduto" className="visually-hidden">Digite o nome do produto:</label>
+            <input id="inputBuscaProduto" className="inputBusca" type="text" placeholder="Digite o nome do produto:" />
+            <NavLink to="/buscarProduto" className="botaoCadastroProduto" aria-label="Buscar produto">
               <TbSearch size={35} />
             </NavLink>
           </div>

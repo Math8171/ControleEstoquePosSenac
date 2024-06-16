@@ -3,6 +3,7 @@ import './fornecedores.css';
 import { TbShoppingBagPlus, TbShoppingBagEdit, TbShoppingBagMinus, TbSearch } from "react-icons/tb";
 import { NavLink } from 'react-router-dom';
 import ComponentMenu from "../../components/componentMenu/componentMenu.tsx";
+import BuscaFornecedor from '../../components/BuscaFornecedor/BuscaFornecedor.js';
 
 function Fornecedores() {
   return (
@@ -13,10 +14,7 @@ function Fornecedores() {
             <h1>FORNECEDORES</h1>
           </div>
           <div className="forncedor-bar">
-            <input className="inputBuscaFornecedor" type="text" placeholder="Digite o nome do fornecedor:" aria-label="Pesquisar fornecedor" />
-            <NavLink to="/buscarProduto" className="botaoCadastroProduto" aria-label="Buscar fornecedor">
-              <TbSearch size={35} aria-hidden="true" />
-            </NavLink>
+            <BuscaFornecedor />
           </div>
           <table className="tableFornecedores">
             <thead>
@@ -41,9 +39,8 @@ function Fornecedores() {
               ))}
             </tbody>
           </table>
-          <div className="iconesCrud">
+          <div className="iconesCrudFornecedor">
             <div>
-
             </div>
             <div className="boxBotaoFornecedores">
               <NavLink to="/cadastroFornecedores" activeClassName="active" className="botaoFornecedores" aria-label="Cadastrar fornecedor">

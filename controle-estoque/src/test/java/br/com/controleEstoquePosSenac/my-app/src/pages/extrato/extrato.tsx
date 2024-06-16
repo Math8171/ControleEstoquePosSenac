@@ -1,8 +1,7 @@
 import React from 'react';
 import './extrato.css';
-import { NavLink } from 'react-router-dom';
-import { TbSearch } from "react-icons/tb";
 import ComponentMenu from "../../components/componentMenu/componentMenu.tsx";
+import BuscaProduto from '../../components/BuscaProduto/BuscaProduto.js';
 
 function Extrato() {
   return (
@@ -13,10 +12,7 @@ function Extrato() {
             <h1>EXTRATO</h1>
           </div>
           <div className="extrato-bar">
-            <input className="inputBusca" type="text" placeholder="Digite o nome do produto:" aria-label="Pesquisar produto" />
-            <NavLink to="/buscarExtrato" className="botaoCadastroProduto" aria-label="Buscar produto">
-              <TbSearch size={35} aria-hidden="true" />
-            </NavLink>
+            <BuscaProduto />
           </div>
           <table className="tableExtrato">
             <thead>

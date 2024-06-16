@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { TbSearch } from "react-icons/tb";
 import { BsCashCoin } from "react-icons/bs";
 import ComponentMenu from "../../components/componentMenu/componentMenu.tsx";
+import BuscaProduto from '../../components/BuscaProduto/BuscaProduto.js';
 
 function Movimentacao() {
 
@@ -16,15 +17,7 @@ function Movimentacao() {
             <h1>MOVIMENTAÇÃO</h1>
           </div>
           <div className="movimentacao-bar">
-            <input
-              className="inputBusca"
-              type="text"
-              placeholder="Digite o nome do produto:"
-              aria-label="Buscar produto"
-            />
-            <NavLink to="/buscarMovimentacao" className="botaoCadastroProduto" aria-label="Buscar movimentação">
-              <TbSearch size={35} />
-            </NavLink>
+            <BuscaProduto />
           </div>
           <table className="tableMovimentacao">
             <thead>

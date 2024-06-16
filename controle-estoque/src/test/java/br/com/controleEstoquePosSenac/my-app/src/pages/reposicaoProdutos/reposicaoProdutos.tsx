@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './reposicaoProdutos.css';
-import { TbSearch } from "react-icons/tb";
-import { NavLink } from 'react-router-dom';
 import ComponentMenu from "../../components/componentMenu/componentMenu.tsx";
+import BuscaProduto from '../../components/BuscaProduto/BuscaProduto.js';
 
 function ReposicaoProduto() {
 
@@ -14,11 +13,7 @@ function ReposicaoProduto() {
             <h1>PRODUTOS EM REPOSIÇÃO</h1>
           </div>
           <div className="search-bar">
-            <label htmlFor="inputBuscaProduto" className="visually-hidden">Digite o nome do produto:</label>
-            <input id="inputBuscaProduto" className="inputBusca" type="text" placeholder="Digite o nome do produto:" />
-            <NavLink to="/buscarProduto" className="botaoCadastroProduto" aria-label="Buscar produto">
-              <TbSearch size={35} />
-            </NavLink>
+            <BuscaProduto />
           </div>
           <table className="tableProdutos">
             <thead>

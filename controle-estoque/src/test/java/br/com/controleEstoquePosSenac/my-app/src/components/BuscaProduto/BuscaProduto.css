@@ -1,0 +1,27 @@
+  .componentInputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .componentBotaoBuscaProduto {
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    color: black;
+  }
+
+  .componentBotaoBuscaProduto:hover {
+    color:blue
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }

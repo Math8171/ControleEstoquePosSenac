@@ -3,6 +3,7 @@ import './loja.css';
 import { TbSearch } from "react-icons/tb";
 import { NavLink } from 'react-router-dom';
 import ComponentMenu from "../../components/componentMenu/componentMenu.tsx";
+import BuscaProduto from '../../components/BuscaProduto/BuscaProduto.js';
 
 function Loja() {
   return (
@@ -13,10 +14,7 @@ function Loja() {
             <h1>LOJA</h1>
           </div>
           <div className="loja-bar">
-            <input className="inputBusca" type="text" placeholder="Digite o nome do produto:" aria-label="Buscar produto na loja" />
-            <NavLink to="/buscarEstoque" className="botaoCadastroProduto" aria-label="Buscar">
-              <TbSearch size={35} aria-hidden="true" />
-            </NavLink>
+            <BuscaProduto />
           </div>
           <table className="tableLoja">
             <thead>

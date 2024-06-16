@@ -3,6 +3,8 @@ import './produtos.css';
 import { TbShoppingBagPlus, TbShoppingBagEdit, TbShoppingBagMinus, TbShoppingBagExclamation, TbSearch } from "react-icons/tb";
 import { NavLink } from 'react-router-dom';
 import ComponentMenu from "../../components/componentMenu/componentMenu.tsx";
+import BuscaProduto from '../../components/BuscaProduto/BuscaProduto.js';
+import BuscaFornecedor from '../../components/BuscaFornecedor/BuscaFornecedor.js';
 
 function Produto() {
 
@@ -14,18 +16,10 @@ function Produto() {
             <h1>PRODUTOS</h1>
           </div>
           <div className="produto-bar">
-            <label htmlFor="inputBuscaProduto" className="visually-hidden">Digite o nome do produto:</label>
-            <input id="inputBuscaProduto" className="inputBusca" type="text" placeholder="Digite o nome do produto:" />
-            <NavLink to="/buscarProduto" className="botaoCadastroProduto" aria-label="Buscar produto">
-              <TbSearch size={35} />
-            </NavLink>
+            <BuscaFornecedor />
           </div>
           <div className="produtoFornecedor-bar">
-            <label htmlFor="inputBuscaFornecedor" className="visually-hidden">Digite o nome do fornecedor:</label>
-            <input id="inputBuscaFornecedor" className="inputBusca" type="text" placeholder="Digite o nome do fornecedor:" />
-            <NavLink to="/buscarProduto" className="botaoCadastroProduto" aria-label="Buscar fornecedor">
-              <TbSearch size={35} />
-            </NavLink>
+            <BuscaProduto />
           </div>
           <table className="tableProdutos">
             <thead>
@@ -55,14 +49,14 @@ function Produto() {
               </NavLink>
             </div>
             <div className="boxBotaoCadastro">
-              <NavLink to="/cadastroProdutos" activeClassName="active" className="botaoCadastroProduto" aria-label="Cadastrar produto">
-                <TbShoppingBagPlus size={45} />
+            <NavLink to="/cadastroProdutos" activeClassName="active" className="botaoCadastroProduto" aria-label="Cadastrar fornecedor">
+                <TbShoppingBagPlus size={45} aria-hidden="true" />
               </NavLink>
-              <NavLink to="/editarProdutos" activeClassName="active" className="botaoCadastroProduto" aria-label="Editar produto">
-                <TbShoppingBagEdit size={45} />
+              <NavLink to="/editarProdutos" activeClassName="active" className="botaoCadastroProduto" aria-label="Editar fornecedor">
+                <TbShoppingBagEdit size={45} aria-hidden="true" />
               </NavLink>
-              <NavLink to="/excluirProduto" activeClassName="active" className="botaoCadastroProduto" aria-label="Excluir produto">
-                <TbShoppingBagMinus size={45} />
+              <NavLink to="/excluirProduto" activeClassName="active" className="botaoCadastroProduto" aria-label="Excluir fornecedor">
+                <TbShoppingBagMinus size={45} aria-hidden="true" />
               </NavLink>
             </div>
           </div>

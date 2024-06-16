@@ -1,0 +1,27 @@
+.componentFornecedorInputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.componentBotaoCadastroFornecedor {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  color: black;
+}
+
+.componentBotaoCadastroFornecedor:hover {
+  color: blue;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

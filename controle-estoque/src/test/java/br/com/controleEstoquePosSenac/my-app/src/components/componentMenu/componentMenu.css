@@ -1,0 +1,94 @@
+.menu-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu-sidebar {
+  background-color: #2f4f4f;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-section {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid;
+}
+
+.avatar-placeholder {
+  width: 120px;
+  height: 120px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-placeholder svg {
+  width: 60px;
+  height: 60px;
+}
+
+.menu-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.main-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #2f4f4f;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.submenu-button {
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #3d6d6d;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.main-button:hover,
+.submenu-button:hover {
+  background-color: #3d6d6d;
+  color: black;
+}
+
+.content-section {
+  background-color: white;
+  flex: 5;
+  border: 1px solid;
+}
+
+.content-section h1 {
+  text-align: center;
+  margin-top: 80px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.submenu-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 5px;
+}

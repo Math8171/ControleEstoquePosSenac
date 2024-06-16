@@ -1,109 +1,32 @@
-.menu-container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  .menu-box {
-    background-color: #2f4f4f;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .profile-container {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid;
-  }
-  
-  .image-placeholder {
-    width: 120px;
-    height: 120px;
-    background-color: #f0f0f0;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image-placeholder svg {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .button-container {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-  }
-  
-  .botaoMenu {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    background-color: #2f4f4f;
-    color: white;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-  
-  .botaoMenu:hover {
-    background-color: #3d6d6d;
-    color: black;
-  }
-  
-  .botaoMenuProduto{
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    background-color: #2f4f4f;
-    color: yellow;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-  
-  /*SEGURANDA PARTE*/
-  
   .CadastroProdutoFormContainer {
-    background-color: white;
     flex: 5;
-    border: 1px solid;
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
     justify-content: center;
     align-items: center;
   }
-  
-  .CadastroProdutoFormContainer h1{
-    display:flex;
+
+  .CadastroProdutoFormContainer h1 {
+    display: flex;
     margin-left: 250px;
-    margin-top: 120px;
+    margin-top: 80px;
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 30px;
-  
+
   }
-  
+
   .CadastroProdutoFormGroup {
     margin-bottom: 15px;
   }
-  
-  .CadastroProdutoFormGroup label{
+
+  .CadastroProdutoFormGroup label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
   }
-  
+
   input,
   textarea {
     width: 600px;
@@ -112,11 +35,11 @@
     border: 1px solid #ced4da;
     border-radius: 4px;
   }
-  
+
   textarea {
     resize: vertical;
   }
-  
+
   .CadastroProdutoSubmitButton {
     width: 600px;
     padding: 10px;
@@ -126,13 +49,13 @@
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   .CadastroProdutoSubmitButton:hover {
     background-color: #0056b3;
   }
-  
-  .boxFormularioCadastroProdutos{
-  
+
+  .boxFormularioCadastroProdutos {
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -142,7 +65,5 @@
     margin-left: 200px;
     border-top: 1px solid #E0E0E0;
     border-left: 1px solid #E0E0E0;
-    
+
   }
-  
-  

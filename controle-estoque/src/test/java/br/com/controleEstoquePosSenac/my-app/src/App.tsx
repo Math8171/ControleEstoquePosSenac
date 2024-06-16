@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Login from "./pages/login/login.tsx";
 import Menu from "./pages/menu/menu.tsx";
 import Produtos from "./pages/produtos/produtos.tsx";
@@ -14,6 +14,7 @@ import EditarFornecedores from "./pages/editarFornecedores/editarFornecedores.ts
 import Movimentacao from "./pages/movimentacao/movimentacao.tsx";
 import MovimentacaoFinanceira from "./pages/movimentacaoFinanceira/movimentacaoFinanceira.tsx";
 import Extrato from "./pages/extrato/extrato.tsx";
+
 
 
 

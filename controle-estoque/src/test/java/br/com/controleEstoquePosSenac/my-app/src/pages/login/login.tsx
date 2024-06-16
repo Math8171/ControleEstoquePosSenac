@@ -1,21 +1,25 @@
 import React, { useState } from 'react';
 import './login.css';
 import LogoEntrada from '../../imagens/logo.PNG';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useHistory } from 'react-router-dom';
 
 function Login() {
 
   const navegacao = useNavigate();
 
-
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleLogin = (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar lógica de autenticação
-    console.log('Email:', email);
-    console.log('Password:', password);
+    if (email === 'admin@admin.com' && password === 'admin') {
+      navigate('/menu');
+      setError('');
+    } else {
+      setError('Invalid email or password');
+    }
   };
 
   return (
@@ -26,7 +30,7 @@ function Login() {
         <div className="login-container">
         <div className="login-informacaoes">
           <h2 className="textoLogin">Login</h2>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleLogin}>
             <div className="form-group">
               <label htmlFor="email">Email:</label>
               <input
@@ -47,7 +51,8 @@ function Login() {
                 required
               />
             </div>
-            <button type="submit"  onClick={() => navegacao('./menu')} className = "botaoLogin">Login</button>
+            {error && <p style={{ color: 'red' }}>{error}</p>}
+            <button type="submit"  className = "botaoLogin">Login</button>
           </form>
         </div>
     </div>
